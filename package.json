@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/oriverk/oriverk-docs/issues"
   },
-  "homepage": "https://github.com/oriverk/oriverk-docs#readme"
+  "homepage": "https://github.com/oriverk/oriverk-docs#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "husky": "^8.0.3"
+  }
 }
