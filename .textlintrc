@@ -1,0 +1,59 @@
+{
+  "plugins": {
+    "@textlint/markdown": {
+      "extensions": [
+        ".mdx"
+      ]
+    }
+  },
+  "filters": {},
+  "rules": {
+    "preset-smarthr": {
+      "prh-rules": true,
+      "ja-no-mixed-period": {
+        "allowEmojiAtEnd": true
+      },
+      "no-hankaku-kana": true,
+      "@textlint-rule/no-unmatched-pair": true,
+      "sentence-length": {
+        "max": 200
+      },
+      "no-doubled-conjunctive-particle-ga": true,
+      "no-double-negative-ja": true,
+      "ja-no-abusage": true,
+      "ja-no-redundant-expression": true,
+      "no-mixed-zenkaku-and-hankaku-alphabet": true,
+      "ja-keishikimeishi": {
+        "detection_hou_kata": false
+      },
+      "ja-hiragana-fukushi": true,
+      "ja-hiragana-hojodoushi": true,
+      "ja-hiragana-daimeishi": true,
+      "ja-no-space-around-parentheses": true,
+      "ja-no-space-between-full-width": true,
+      "ja-space-between-half-and-full-width": {
+        "space": "always",
+        "exceptPunctuation": true
+      },
+      "ja-space-after-exclamation": true,
+      "ja-space-after-question": true,
+      "ja-space-around-code": false
+    },
+    "preset-ja-technical-writing": {
+      "max-kanji-continuous-len": {
+        "max": 20
+      },
+      "ja-no-weak-phrase": false,
+      "no-doubled-joshi": {
+        "strict": false,
+        "allow": [
+          "か"
+        ]
+      },
+      "ja-no-mixed-period": {
+        "allowEmojiAtEnd": true
+      }
+    },
+    "spellcheck-tech-word": true
+  }
+}
