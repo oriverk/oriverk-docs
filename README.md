@@ -38,3 +38,8 @@ npm i -D markdownlint-cli
 
 - [MarkdownのコードブロックをESLintでチェックするtextlintルール | Web Scratch](https://efcl.info/2016/07/06/eslint-with-textlint/)
 - [oriverk/zenn-docs: for zenn.dev](https://github.com/oriverk/zenn-docs/tree/main)
+
+- [Visual Studio Code April 2022](https://code.visualstudio.com/updates/v1_67#_languages)
+- [Visual Studio CodeがMarkdownのサポートを強化。ファイルのドロップでリンクを自動作成、見出しへの参照一覧など。Visual Studio Code 1.67（April 2022） － Publickey](https://www.publickey1.jp/blog/22/visual_studio_codemarkdownvisual_studio_code_167april_2022.html)
+- [Markdown Shortcuts - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts)
+- [sakamoto66/vscode-paste-image: paste image from clipboard to markdown/asciidoc directly!](https://github.com/sakamoto66/vscode-paste-image)
