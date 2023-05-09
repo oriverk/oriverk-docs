@@ -9,7 +9,5 @@
       "strings": "off",
       "other": "off"
     }
-  },
-  "pasteImage.path": "./",
-  "pasteImage.defaultName": "X",
+  }
 }

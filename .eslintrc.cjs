@@ -14,9 +14,32 @@ module.exports = {
 			processor: "markdown/markdown"
     },
 		{
-			files: ["**/*.{md,mdx}/*.{js,ts,tsx,jsx,vue,svelte}"],
+			files: ["**/*.{md,mdx}/*.{javascript,js,typescrpit,ts,tsx,jsx,vue,svelte,astro}:?*"],
 			rules: {
-				"@typescript-eslint/no-unused-vars": 0
+				"@typescript-eslint/no-unused-vars": 0,
+				"@typescript-eslint/no-explicit-any": 0,
+				"@typescript-eslint/no-var-requires": 0
+			}
+		},
+		{
+			files: ["**/*.{md,mdx}/*.{astro}:?.*"],
+			parser: 'astro-eslint-parser',
+			parserOptions: {
+				parser: '@typescript-eslint/parser',
+				extraFileExtensions: ['.astro']
+			},
+			rules: {},
+		},
+		{
+			files: ["**/*.{md,mdx}/*.{svelte}:?.*"],
+			processor: 'svelte3/svelte3',
+			parserOptions: {
+				parser: '@typescript-eslint/parser',
+				extraFileExtensions: ['.svelte']
+			},
+			rules: {},
+			settings: {
+				'svelte3/typescript': true
 			}
 		}
 	],
@@ -27,7 +50,8 @@ module.exports = {
 	},
 	plugins: [
 		'@typescript-eslint',
-		'markdown'
+		'markdown',
+		'svelte3'
 	],
 	rules: {}
 }
